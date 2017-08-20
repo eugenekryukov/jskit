@@ -4,6 +4,7 @@ Cross-platform JavaScript framework for Delphi. Evaluate JavaScript programs fro
 
 ![MacOS](Screenshots/macos.png)
 ![Linux](Screenshots/linux.png)
+![Win](Screenshots/win.png)
 
 # Overview
 
