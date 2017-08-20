@@ -2,8 +2,8 @@
 
 Cross-platform JavaScript framework for Delphi. Evaluate JavaScript programs from within a Delphi app, and support JavaScript scripting of your Delphi app.
 
-![MacOS](Screenshots\macos.png)
-![Linux](Screenshots\linux.png)
+![MacOS](Screenshots/macos.png)
+![Linux](Screenshots/linux.png)
 
 # Overview
 
