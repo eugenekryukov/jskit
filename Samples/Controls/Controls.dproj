@@ -6,7 +6,7 @@
         <MainSource>Controls.dpr</MainSource>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
-        <Platform Condition="'$(Platform)'==''">Linux64</Platform>
+        <Platform Condition="'$(Platform)'==''">OSX32</Platform>
         <TargetedPlatforms>133</TargetedPlatforms>
         <AppType>Application</AppType>
     </PropertyGroup>
@@ -542,13 +542,6 @@
                     <Platform Name="Win64">
                         <RemoteDir>Contents\MacOS</RemoteDir>
                         <RemoteName>ole32.dll</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="..\..\Bin\OSX32\Controls.rsm" Configuration="Debug" Class="DebugSymbols">
-                    <Platform Name="OSX32">
-                        <RemoteDir>Contents\MacOS\</RemoteDir>
-                        <RemoteName>Controls.rsm</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

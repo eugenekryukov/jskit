@@ -2,6 +2,9 @@
 
 Cross-platform JavaScript framework for Delphi. Evaluate JavaScript programs from within a Delphi app, and support JavaScript scripting of your Delphi app.
 
+![MacOS](Screenshots\macos.png)
+![Linux](Screenshots\linux.png)
+
 # Overview
 
 The JSKit allows you to evaluate JavaScript programs from within an Delphi program using JavaScriptCore. It also lets you insert custom objects to the JavaScript environment.
