@@ -1,0 +1,60 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{14672098-5344-4C9D-9F42-952BBEBC8D82}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="Console\ConsoleJS.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Controls\Controls.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="VisualConsole\VisualConsole.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="ConsoleJS">
+			<MSBuild Projects="Console\ConsoleJS.dproj"/>
+		</Target>
+		<Target Name="ConsoleJS:Clean">
+			<MSBuild Projects="Console\ConsoleJS.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="ConsoleJS:Make">
+			<MSBuild Projects="Console\ConsoleJS.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Controls">
+			<MSBuild Projects="Controls\Controls.dproj"/>
+		</Target>
+		<Target Name="Controls:Clean">
+			<MSBuild Projects="Controls\Controls.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="Controls:Make">
+			<MSBuild Projects="Controls\Controls.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="VisualConsole">
+			<MSBuild Projects="VisualConsole\VisualConsole.dproj"/>
+		</Target>
+		<Target Name="VisualConsole:Clean">
+			<MSBuild Projects="VisualConsole\VisualConsole.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="VisualConsole:Make">
+			<MSBuild Projects="VisualConsole\VisualConsole.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="ConsoleJS;Controls;VisualConsole"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="ConsoleJS:Clean;Controls:Clean;VisualConsole:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="ConsoleJS:Make;Controls:Make;VisualConsole:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

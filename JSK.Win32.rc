@@ -1,0 +1,5 @@
+icudt46  RCDATA "Redist\Win32\icudt46.dll"
+icuin46  RCDATA "Redist\Win32\icuin46.dll"
+icuuc46  RCDATA "Redist\Win32\icuuc46.dll"
+JavaScriptCore RCDATA "Redist\Win32\JavaScriptCore.dll"
+WTF RCDATA "Redist\Win32\WTF.dll"
