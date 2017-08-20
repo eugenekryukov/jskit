@@ -4,7 +4,7 @@ Evaluate JavaScript programs from within a Delphi app, and support JavaScript sc
 
 # Overview
 
-The JSPack allows you to evaluate JavaScript programs from within an Delphi program using JavaScriptCore. It also lets you insert custom objects to the JavaScript environment.
+The JSKit allows you to evaluate JavaScript programs from within an Delphi program using JavaScriptCore. It also lets you insert custom objects to the JavaScript environment.
 
 # Features
 
@@ -16,7 +16,11 @@ The JSPack allows you to evaluate JavaScript programs from within an Delphi prog
 
 # Distribution
 
-JSPack's application requires JavaScripCore shared library. All required DLL located at Redist folder.
+Windows JSKit's application requires JavaScripCore shared library. All required DLL located at Redist folder. 
+
+macOS already has JavaScriptCore.
+
+JavaScriptCore on Linux can be installed by "sudo apt install libwebkitgtk-3.0"
 
 # Requirements
 
@@ -29,3 +33,5 @@ Remember that this library and its source code are distributed under terms of Mo
 If you need to use this framework for a project with a different licensing requirements, feel free to contact the author for more options.
 
 Copyright (c) 2017 Eugene Kryukov
+
+http://www.ksdev.com
