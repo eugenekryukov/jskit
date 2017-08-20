@@ -1,6 +1,6 @@
 # JavaScriptCore Kit (JSKit) 
 
-Evaluate JavaScript programs from within a Delphi app, and support JavaScript scripting of your Delphi app.
+Cross-platform JavaScript framework for Delphi. Evaluate JavaScript programs from within a Delphi app, and support JavaScript scripting of your Delphi app.
 
 # Overview
 
