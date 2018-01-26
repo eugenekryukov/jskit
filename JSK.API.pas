@@ -35,6 +35,13 @@ const
 
 type
 
+{$IF not Declared(TUTF8Char)}
+  TUTF8Char = type AnsiChar;
+{$IFEND}
+{$IF not Declared(PUTF8Char)}
+  PUTF8Char = ^TUTF8Char;
+{$IFEND}
+
   JSAnsiString = PUtf8Char;
 
   // A constant identifying the type of a JSValue.
